@@ -50,7 +50,7 @@ def generate_chat_response(messages):
     
     # Call OpenAI API
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4-turbo",
         messages=formatted_messages,
         temperature=0.7,
         max_tokens=1000
@@ -69,7 +69,7 @@ def analyze_document(content):
     
     # Call OpenAI API
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4-turbo",
         messages=[
             {
                 "role": "system",
@@ -99,7 +99,7 @@ def generate_document_content(document_type, title, description):
     
     # Call OpenAI API
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4-turbo",
         messages=[
             {
                 "role": "system",
